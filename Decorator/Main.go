@@ -12,7 +12,7 @@ func main() {
 	}
 
 	fmt.Println("Yor order:")
-	fmt.Println(espressowithmilkandsoy.getDescription()[:len(espressowithmilkandsoy.getDescription())-2], ";")
-	fmt.Println("Cost: ", espressowithmilkandsoy.cost())
+	fmt.Println(espressowithmilkandsoy.getDescription())
+	fmt.Println("Cost: ", espressowithmilkandsoy.cost(), "$")
 
 }

@@ -9,5 +9,5 @@ func (b *Whip) cost() float64 {
 }
 
 func (b *Whip) getDescription() string {
-	return b.Beverage.getDescription() + "whip, "
+	return b.Beverage.getDescription() + "Whip; "
 }

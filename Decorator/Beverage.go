@@ -1,7 +1,7 @@
 package main
 
 type Beverage interface {
-	cost() float64
+	cost() float32
 	getDescription() string
 }
 type Coffee struct {

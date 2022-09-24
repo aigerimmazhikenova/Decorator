@@ -8,5 +8,5 @@ func (b *Decaf) getDescription() string {
 }
 
 func (b *Decaf) cost() float32 {
-	return 2.47
+	return 2.49
 }

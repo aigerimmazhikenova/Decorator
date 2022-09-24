@@ -3,14 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	beverage := &Espresso{}
-	espressowithmilk := &Milk{
+	beverage := &DarkRoast{}
+	espressowithmilk := &Soy{
 		Beverage: beverage,
 	}
-	espressowithmilkandsoy := &Soy{
+	espressowithmilkandsoy := &Milk{
 		Beverage: espressowithmilk,
 	}
 	fmt.Println(espressowithmilkandsoy.getDescription())
-	fmt.Println("Total cost:          -", espressowithmilkandsoy.cost(), "$")
+	cost := fmt.Sprintf("%.2f", espressowithmilkandsoy.cost())
+	fmt.Println("Total cost:          -", cost, "$")
 
 }

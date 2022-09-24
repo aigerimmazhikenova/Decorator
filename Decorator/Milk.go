@@ -5,7 +5,7 @@ type Milk struct {
 }
 
 func (b *Milk) cost() float32 {
-	return 0.20 + b.Beverage.cost()
+	return 0.2 + b.Beverage.cost()
 }
 
 func (b *Milk) getDescription() string {
